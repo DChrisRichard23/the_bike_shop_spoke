@@ -1,8 +1,8 @@
 
-include: "//the_bike_shop/views/fact_orders.view.lkml"
+include: "//the_bike_shop/views/dim_product.view.lkml"
 
-view: fact_orders_add {
-  extends: [fact_orders]
+view: dim_product_add {
+  extends: [dim_product]
 
   # measure: discount_amount {
   #   type: sum
@@ -20,4 +20,5 @@ view: fact_orders_add {
 
 }
 
-explore: fact_orders_add {}
+
+explore: dim_product_add {}
